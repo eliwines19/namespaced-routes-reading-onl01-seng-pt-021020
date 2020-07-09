@@ -6,8 +6,6 @@ Rails.application.routes.draw do
   resources :posts, only: %i[index show new create edit update]
 
   namespace :admin do
-    
-  end
     resources :stats, only: [:index]
   end
 
